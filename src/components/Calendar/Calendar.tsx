@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import './Calendar.css';
 import { fetchCalendarData } from '../../services/api';
 
-interface CalendarEvent {
+type  CalendarEvent = {
   date: string;
   event: string;
 }

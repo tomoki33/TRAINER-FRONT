@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import './Progress.css';
 import { fetchProgressData } from '../../services/api';
 
-interface ProgressData {
+type ProgressData ={
   date: string;
   weight: number;
   bodyFat: number;

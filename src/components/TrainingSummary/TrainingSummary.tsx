@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import './TrainingSummary.css';
 import { fetchTrainingData } from '../../services/api';
 
-interface TrainingData {
+type TrainingData ={
   name: string;
   sets: number;
   reps: number;

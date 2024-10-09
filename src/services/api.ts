@@ -33,3 +33,36 @@ export const fetchTrainingData = async () => {
       { date: '2024-10-03', event: 'トレーニング' },
     ];
   };
+
+  export const fetchTrainingMenu = async () => {
+    // API 呼び出しの実装
+    return [
+      { exercise: 'ベンチプレス', sets: 3, reps: 10, duration: '30分' },
+      { exercise: 'スクワット', sets: 3, reps: 15, duration: '45分' },
+    ];
+  };
+  
+  export const fetchTrainingDetail = async (exercise: string) => {
+    // API 呼び出しの実装
+    return {
+      videoUrl: 'https://example.com/video.mp4',
+      description: 'ベンチプレスの説明',
+      precautions: '注意事項',
+    };
+  };
+  
+  export const submitTrainingProgress = async (progress: { weight: string; reps: string; duration: string }) => {
+    // API 呼び出しの実装
+  };
+  
+  export const fetchTrainingHistory = async () => {
+    // API 呼び出しの実装
+    return [
+      { date: '2023-01-01', progress: 50 },
+      { date: '2023-01-02', progress: 55 },
+    ];
+  };
+  
+  export const updateTrainingSettings = async (settings: { sets: string; weight: string }) => {
+    // API 呼び出しの実装
+  };

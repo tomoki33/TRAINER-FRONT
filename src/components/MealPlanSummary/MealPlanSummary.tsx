@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import './MealPlanSummary.css';
 import { fetchMealData } from '../../services/api';
 
-interface MealData {
+type MealData ={
   meal: string;
   calories: number;
 }
