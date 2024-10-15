@@ -18,7 +18,6 @@ const MealMenu: React.FC = () => {
       <MealDetail mealId={0}/>
       <MealHistory/>
       <MealProgress/>
-      <button onClick={navigateToMealManage}>ホーム画面へ</button>
     </div>
   );
 };

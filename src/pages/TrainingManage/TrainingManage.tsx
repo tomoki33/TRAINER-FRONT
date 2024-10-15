@@ -10,16 +10,9 @@ import { useNavigate } from 'react-router-dom';
 
 const TrainingManage: React.FC = () => {
 
-  const navigate = useNavigate();
-
-  const navigateToHome = () => {
-    navigate('/');
-  };
-
   return (
     <div className="TrainingManage">
       <h1>トレーニング管理</h1>
-      <button onClick={navigateToHome}>ホーム画面へ</button>
       <TrainingDetail exercise={''} />
       <TrainingHistory />
       <TrainingMenu />

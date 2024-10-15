@@ -7,15 +7,6 @@ import Calendar from '../../components/Calendar/Calendar';
 
 
 const Home: React.FC = () => {
-  const navigate = useNavigate();
-
-  const navigateToTrainingManage = () => {
-    navigate('/training-manage');
-  };
-
-  const navigateToMealManage = () => {
-    navigate('/meal-manage');
-  };
 
   return (
     <div className="home">
@@ -24,8 +15,6 @@ const Home: React.FC = () => {
       <MealPlanSummary />
       <Progress />
       <Calendar />
-      <button onClick={navigateToTrainingManage}>トレーニング管理へ</button>
-      <button onClick={navigateToMealManage}>食事管理へ</button>
     </div>
   );
 };
