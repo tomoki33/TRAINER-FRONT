@@ -66,3 +66,30 @@ export const fetchTrainingData = async () => {
   export const updateTrainingSettings = async (settings: { sets: string; weight: string }) => {
     // API 呼び出しの実装
   };
+
+  export const fetchMeals = async () => {
+    return {
+        breakfast:"a",
+        lunch:"b",
+        dinner:"c",
+        snack:"d",
+    };
+  };
+
+  export const fetchMealDetail = async () => {
+    return{
+      name:"test",
+      calories:"b",
+      nutrition:"c",
+      recipieLink:"d",
+    }
+  };
+
+  export const fetchMealHistory = async () => {
+    return {
+      date:"2024/02/02",
+      calories:"2",
+      nutrition:"vitamin"
+    }
+
+  }
