@@ -2,6 +2,8 @@ import React from 'react';
 import Home from './pages/Home/Home';
 import TrainingManage from './pages/TrainingManage/TrainingManage';
 import MealManage from './pages/MealManage/MealManage';
+import Goal from './pages/Goal/Goal';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideBar from './components/SideBar/SideBar';
 
@@ -19,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/training-manage" element={<TrainingManage />} />
             <Route path="/meal-manage" element={<MealManage />} />
+            <Route path="/goal" element={<Goal />} />
           </Routes>
         </div>
       </div>

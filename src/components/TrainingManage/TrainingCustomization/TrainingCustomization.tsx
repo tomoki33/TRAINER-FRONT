@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { updateTrainingSettings } from '../../services/api';
+import { updateTrainingSettings } from '../../../services/api';
 
 const TrainingCustomization: React.FC = () => {
   const [sets, setSets] = useState('');

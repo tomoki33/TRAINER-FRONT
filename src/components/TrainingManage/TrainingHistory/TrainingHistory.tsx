@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTrainingHistory } from '../../services/api';
+import { fetchTrainingHistory } from '../../../services/api';
 import { Line } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 

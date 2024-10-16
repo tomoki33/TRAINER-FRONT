@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import './Progress.css';
-import { fetchProgressData } from '../../services/api';
+import { fetchProgressData } from '../../../services/api';
 
 type ProgressData ={
   date: string;

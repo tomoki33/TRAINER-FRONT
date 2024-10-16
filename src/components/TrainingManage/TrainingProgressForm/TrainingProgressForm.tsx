@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { submitTrainingProgress } from '../../services/api';
+import { submitTrainingProgress } from '../../../services/api';
 
 const TrainingProgressForm: React.FC = () => {
   const [weight, setWeight] = useState('');

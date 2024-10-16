@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import './TrainingSummary.css';
-import { fetchTrainingData } from '../../services/api';
+import { fetchTrainingData } from '../../../services/api';
 
 type TrainingData ={
   name: string;

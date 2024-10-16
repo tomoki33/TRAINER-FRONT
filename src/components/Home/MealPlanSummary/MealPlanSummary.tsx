@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import './MealPlanSummary.css';
-import { fetchMealData } from '../../services/api';
+import { fetchMealData } from '../../../services/api';
 
 type MealData ={
   meal: string;

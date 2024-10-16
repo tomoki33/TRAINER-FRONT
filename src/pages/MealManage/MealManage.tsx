@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import TrainingSummary from '../../components/MealDetail/MealDetail';
-import MealDetail from '../../components/MealDetail/MealDetail';
-import MealHistory from '../../components/MealHistory/MealHistory';
-import MealProgress from '../../components/MealProgress/MealProgress';
+import TrainingSummary from '../../components/MealManage/MealDetail/MealDetail';
+import MealDetail from '../../components/MealManage/MealDetail/MealDetail';
+import MealHistory from '../../components/MealManage/MealHistory/MealHistory';
+import MealProgress from '../../components/MealManage/MealProgress/MealProgress';
 import { useNavigate } from 'react-router-dom';
 
 

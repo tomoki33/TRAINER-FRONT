@@ -1,11 +1,11 @@
 import React from 'react';
 
-import TrainingDetail from '../../components/TrainingDetail/TrainingDetail';
-import TrainingHistory from '../../components/TrainingHistory/TrainingHistory';
-import TrainingMenu from '../../components/TrainingMenu/TrainingMenu';
-import TrainingSummary from '../../components/TrainingSummary/TrainingSummary';
-import TrainingCustomization from '../../components/TrainingCustomization/TrainingCustomization';
-import TrainingProgressForm from '../../components/TrainingProgressForm/TrainingProgressForm';
+import TrainingDetail from '../../components/TrainingManage/TrainingDetail/TrainingDetail';
+import TrainingHistory from '../../components/TrainingManage/TrainingHistory/TrainingHistory';
+import TrainingMenu from '../../components/TrainingManage/TrainingMenu/TrainingMenu';
+import TrainingSummary from '../../components/TrainingManage/TrainingSummary/TrainingSummary';
+import TrainingCustomization from '../../components/TrainingManage/TrainingCustomization/TrainingCustomization';
+import TrainingProgressForm from '../../components/TrainingManage/TrainingProgressForm/TrainingProgressForm';
 import { useNavigate } from 'react-router-dom';
 
 const TrainingManage: React.FC = () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import TrainingSummary from '../../components/TrainingSummary/TrainingSummary';
-import MealPlanSummary from '../../components/MealPlanSummary/MealPlanSummary';
-import Progress from '../../components/Progress/Progress';
-import Calendar from '../../components/Calendar/Calendar';
+import TrainingSummary from '../../components/TrainingManage/TrainingSummary/TrainingSummary';
+import MealPlanSummary from '../../components/Home/MealPlanSummary/MealPlanSummary';
+import Progress from '../../components/Home/Progress/Progress';
+import Calendar from '../../components/Home/Calendar/Calendar';
 
 
 const Home: React.FC = () => {

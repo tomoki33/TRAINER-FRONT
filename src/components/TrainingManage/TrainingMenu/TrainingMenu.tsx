@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTrainingMenu } from '../../services/api';
+import { fetchTrainingMenu } from '../../../services/api';
 
 type TrainingItem ={
   exercise: string;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTrainingDetail } from '../../services/api';
+import { fetchTrainingDetail } from '../../../services/api';
 
 type TrainingDetailProps ={
   videoUrl: string;

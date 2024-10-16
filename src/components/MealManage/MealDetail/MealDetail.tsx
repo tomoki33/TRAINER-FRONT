@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchMealDetail } from '../../services/api';
+import { fetchMealDetail } from '../../../services/api';
 
 
 const MealDetail: React.FC<{ mealId: number }> = ({ mealId }) => {

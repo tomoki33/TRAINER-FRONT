@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchMealHistory } from '../../services/api';
+import { fetchMealHistory } from '../../../services/api';
 
 type MealHistory ={
   date: string;
