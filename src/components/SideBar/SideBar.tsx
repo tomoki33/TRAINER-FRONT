@@ -7,9 +7,11 @@ const Sidebar: React.FC = () => {
       <h2>Menu</h2>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/training-manage">training-manage</a></li>
-        <li><a href="/meal-manage">meal-manage</a></li>
-        <li><a href="/goal">goal</a></li>
+        <li><a href="/training-manage">Training-Manage</a></li>
+        <li><a href="/meal-manage">Meal-Manage</a></li>
+        <li><a href="/goal">Goal</a></li>
+        <li><a href="/reminder">Reminder</a></li>
+        <li><a href="/config">Config</a></li>
       </ul>
     </div>
   );
