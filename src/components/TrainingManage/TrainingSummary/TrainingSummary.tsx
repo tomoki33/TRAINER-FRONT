@@ -2,17 +2,20 @@ import React, { useEffect, useState } from 'react';
 // import './TrainingSummary.css';
 import { fetchTrainingData } from '../../../services/api';
 
-type TrainingData ={
-  name: string;
-  sets: number;
-  reps: number;
-}
+export type TrainingData = {
+  title: string;
+  description: number;
+  date: Date;
+};
+
 
 const TrainingSummary: React.FC = () => {
   const [trainingData, setTrainingData] = useState<TrainingData[]>([]);
 
   useEffect(() => {
-    fetchTrainingData().then(data => setTrainingData(data));
+    fetchTrainingData()
+      .then(data => setTrainingData(data))  // データ取得後に状態を設定
+      .catch(error => console.error("Error in useEffect:", error));  // エラーハンドリング
   }, []);
 
   return (
@@ -21,7 +24,7 @@ const TrainingSummary: React.FC = () => {
       <ul>
         {trainingData.map((exercise, index) => (
           <li key={index}>
-            <strong>{exercise.name}</strong>: {exercise.sets} セット x {exercise.reps} レップ
+            <strong>{exercise.title}</strong>: {exercise.description} 
           </li>
         ))}
       </ul>

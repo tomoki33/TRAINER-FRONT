@@ -1,11 +1,19 @@
-export const fetchTrainingData = async () => {
-    // APIからトレーニングデータを取得するロジックを実装
-    return [
-      { name: 'ベンチプレス', sets: 3, reps: 10 },
-      { name: 'スクワット', sets: 3, reps: 15 },
-      { name: 'デッドリフト', sets: 3, reps: 8 },
-    ];
-  };
+import { TrainingData } from '../components/TrainingManage/TrainingSummary/TrainingSummary';
+
+
+export const fetchTrainingData = (): Promise<TrainingData[]> => {
+  return fetch('http://localhost:8000/training/') // ここでAPIのURLを指定
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .catch(error => {
+      console.error("Error fetching training data:", error);
+      return [];
+    });
+};
   
   export const fetchMealData = async () => {
     // APIから食事データを取得するロジックを実装

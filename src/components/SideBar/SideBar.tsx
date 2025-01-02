@@ -12,6 +12,7 @@ const Sidebar: React.FC = () => {
         <li><a href="/goal">Goal</a></li>
         <li><a href="/reminder">Reminder</a></li>
         <li><a href="/config">Config</a></li>
+        <li><a href="/config">Logout</a></li>
       </ul>
     </div>
   );
